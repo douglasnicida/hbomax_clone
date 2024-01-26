@@ -1,4 +1,5 @@
 import Card from "../components/card/card";
+import Question from "../components/question/question";
 import Slideshow from "./Slideshow";
 
 export default function App(){
@@ -206,6 +207,7 @@ export default function App(){
       </div>
 
       {/* divisao perguntas frequentes */}
+      <Question />
       
     </>
   )

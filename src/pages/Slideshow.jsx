@@ -97,7 +97,7 @@ export default function Slideshow() {
     //     }
     // }
 
-    const i = (index) => (<div className="cursor-pointer text-center text-2xl px-2 indicator">{index + 1}</div>);
+    const i = (index) => (<span className="cursor-pointer text-center text-2xl px-2 indicator leading-7">{index + 1}</span>);
 
     const slideProperties = {
         prevArrow: <IoIosArrowBack className="text-4xl cursor-pointer ml-10"/>,
