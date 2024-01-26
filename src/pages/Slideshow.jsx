@@ -6,6 +6,7 @@ import 'react-slideshow-image/dist/styles.css';
 
 const data = {
     data1: {
+        id: 1,
         title: "Homem-Aranha: Através do Aranhaverso",
         desc: "Homem-Aranha é jogado no multiverso. Lá, encontra uma numerosa equipe encarregada de proteger sua própria existência.",
         img: "bg-spidermanMovie",
@@ -30,6 +31,7 @@ const data = {
     },
 
     data2: {
+        id: 2,
         title: "Demon Slayer: To the Hashira Training",
         desc: "O treinamento para se tornar um Hashira – um membro de alto escalão do Demon Slayer Corps – é intenso e exigente.",
         img: "bg-demonslayerMovie",
@@ -114,7 +116,7 @@ export default function Slideshow() {
                         {
                             movies.map((item) => {
                                 return(
-                                    <div className="flex items-center justify-center bg-cover">
+                                    <div className="flex items-center justify-center bg-cover" key={item.id}>
                                         <div className="flex gap-10 mx-auto">
                                             <div className="w-[500px]">
                                                 <h2 className="text-[27px] font-bold tracking-widest leading-8">{item.title}</h2>

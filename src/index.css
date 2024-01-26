@@ -17,3 +17,29 @@ body {
 .indicator.active{
   color: #cfcfcf;
 }
+
+.question {
+  height: 0;
+}
+
+.question.active{
+  height: 90px;
+  
+}
+
+.question.activeQ5{
+  height: 370px;
+  
+}
+
+@media (max-width: 480px) {
+  .question.active{
+    height: 140px;
+    
+  }
+  
+  .question.activeQ5{
+    height: 1130px;
+    
+  }
+}
